@@ -5,7 +5,7 @@ import Parallax from "@/components/Parallax";
 import Marquee from "@/components/Marquee";
 import Coverflow from "@/components/Coverflow";
 import CategoryTiles from "@/components/CategoryTiles";
-import { Inspiration, Quote } from "@/components/Sections";
+import { Inspiration, Quote, Customise } from "@/components/Sections";
 import { Arrow, Starburst } from "@/components/Icons";
 import { featured } from "@/lib/products";
 export default function Home() {
@@ -32,6 +32,7 @@ export default function Home() {
         <h2 className="sec-h" style={{ marginBottom: 34 }}><Lines lines={[{ t: "Find your" }, { t: "little Khayaal.", e: true }]} /></h2>
         <CategoryTiles />
       </section>
+      <Customise />
       <section className="artist" style={{ marginTop: 60 }}><Starburst /><div className="wrap ag">
         <Reveal className="rl"><p className="eyebrow">The artist behind Khayaal</p><h2><Lines lines={[{ t: "Behind every Khayaal," }, { t: "there’s a story.", e: true }]} /></h2>
           <p className="lead">Meet Komal — the heart and creative soul behind this little world of handmade art. A space where ideas become colour, texture and something you can hold.</p>

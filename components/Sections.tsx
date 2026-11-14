@@ -23,3 +23,23 @@ export function Cta() {
       <Reveal><Link href="/contact" className="btn">Begin an enquiry <Arrow /></Link></Reveal></section>
   );
 }
+export function Customise() {
+  const steps = [
+    { n: "01", t: "Share your idea", d: "A colour, a memory, a name, a motif, anything that feels like you." },
+    { n: "02", t: "Komal curates it", d: "She talks it through with you and shapes it into a design." },
+    { n: "03", t: "Made by hand, for you", d: "Painted or crocheted slowly, then sent to your door." },
+  ];
+  return (
+    <section className="wrap cust">
+      <Reveal><p className="eyebrow">Made just for you</p></Reveal>
+      <h2 className="sec-h"><Lines lines={[{ t: "Have an idea?" }, { t: "Customise yours.", e: true }]} /></h2>
+      <Reveal><p className="cust-lead">Every Khayaal begins as a thought. Tell us yours, and we&apos;ll turn it into a one-of-a-kind painting, bag or crochet piece.</p></Reveal>
+      <div className="cust-steps">
+        {steps.map((s) => (
+          <Reveal key={s.n}><div className="cust-step"><span>{s.n}</span><h3>{s.t}</h3><p>{s.d}</p></div></Reveal>
+        ))}
+      </div>
+      <Reveal><Link href="/contact" className="btn">Share your idea <Arrow /></Link></Reveal>
+    </section>
+  );
+}
