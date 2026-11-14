@@ -14,6 +14,7 @@ export default function Exhibit({ items, rev }: { items: Product[]; rev?: boolea
       <div className="ext">
         <div className="num">{pad(i + 1)} / {pad(n)}</div><div className="lab">{p.cat}</div><h3>{p.name}</h3><p>{p.desc}</p>
         <div className="exc"><button className="lk" onClick={() => go(-1)}>← Previous</button><button className="lk" onClick={() => go(1)}>Next →</button><button className="lk" onClick={() => setLb(true)}>View larger</button></div>
+        <p className="hint hint-l">Tap or click the image to view full version</p>
       </div>
       {lb && <Lightbox items={items} index={i} onClose={() => setLb(false)} onChange={setI} />}
     </div>
