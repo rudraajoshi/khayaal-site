@@ -23,12 +23,19 @@ export const products: Product[] = [
   { id: 13, name: "The Diya and Mandala Tote", desc: "Little painted diyas scattered between two vivid mandala corners.", cat: "Bags" },
   { id: 22, name: "Little Crochet Pouches", desc: "Tiny, cheerful crochet pouches finished with beads and buttons.", cat: "Crochet" },
   { id: 21, name: "White Blossom Crochet Garlands", desc: "Soft crocheted blossoms on green stems, made by hand.", cat: "Crochet" },
+  { id: 23, name: "The Pearl and Brass Pouch", desc: "Burlap and cotton, with brass bars, pearls and wooden beads.", cat: "Pouches" },
+  { id: 24, name: "The Mirror and Gold Pouch", desc: "Little mirrors and gold sequins above a band of burlap and wooden beads.", cat: "Pouches" },
+  { id: 25, name: "The Cowrie Pouch", desc: "A single cowrie shell between two brass bars, with mirrors above.", cat: "Pouches" },
+  { id: 26, name: "The Sunburst Pouch", desc: "Cowrie shells, mother-of-pearl discs and bright yellow beads in a sunburst pattern.", cat: "Pouches" },
+  { id: 27, name: "The Black Band Pouch", desc: "Cowries and wooden beads on a black band, finished with white lace.", cat: "Pouches" },
+  { id: 28, name: "The Black Lace Pouch", desc: "Black floral lace over cream cotton, with buttons and a jute fringe.", cat: "Pouches" },
 ];
 export const src = (id: number) => `/products/${id}.jpg`;
 export const categoryList = [
   { slug: "paintings", title: "Paintings", cover: 7, blurb: "Colour, pattern and little stories, painted by hand." },
   { slug: "wall-hangings", title: "Wall Hangings", cover: 15, blurb: "Long, richly bordered pieces made to bring a wall to life." },
   { slug: "bags", title: "Bags", cover: 12, blurb: "Cotton totes and sling bags, each hand-painted with its own motif." },
+  { slug: "pouches", title: "Pouches", cover: 26, blurb: "Zip pouches in cotton and jute, trimmed with lace, shells and beads." },
   { slug: "crochet", title: "Crochet", cover: 22, blurb: "Small, soft treasures, crocheted by hand." },
 ].map((c) => ({ ...c, items: products.filter((p) => p.cat === c.title) }));
 export const getCategory = (slug: string) => categoryList.find((c) => c.slug === slug);

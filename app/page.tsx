@@ -18,7 +18,7 @@ export default function Home() {
           <p className="lead">Khayaal is a growing collection of handmade creations by Komal Joshi — made slowly, with curiosity, colour and heart.</p>
           <Link href="/creations" className="btn">Explore the creations <Arrow /></Link>
         </div>
-        <Parallax speed={0.06} className="hi"><div className="circ" /><div className="frm" /><svg className="hs" viewBox="-50 -50 100 100" fill="none" stroke="#B05A3A" strokeWidth="1.2" strokeLinecap="round">{Array.from({ length: 24 }, (_, k) => <line key={k} y1="-14" y2={k % 2 ? -34 : -46} transform={`rotate(${k * 15})`} />)}</svg><div className="flt"><img src="/products/3.jpg" alt="The Royal Elephant" /></div><p className="scr">one little idea at a time</p></Parallax>
+        <Parallax speed={0.06} className="hi"><div className="circ" /><div className="frm" /><svg className="hs" viewBox="-50 -50 100 100" fill="none" stroke="#B05A3A" strokeWidth="1.2" strokeLinecap="round">{Array.from({ length: 24 }, (_, k) => <line key={k} y1="-14" y2={k % 2 ? -34 : -46} transform={`rotate(${k * 15})`} />)}</svg><div className="flt"><img src="/hero.jpg" alt="The Royal Elephant" /></div><p className="scr">one little idea at a time</p></Parallax>
       </section>
       <Marquee />
       <section className="wrap" style={{ paddingBlock: "70px 20px" }}>
