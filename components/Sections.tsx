@@ -26,7 +26,7 @@ export function Cta() {
 export function Customise() {
   const steps = [
     { n: "01", t: "Share your idea", d: "A colour, a memory, a name, a motif, anything that feels like you." },
-    { n: "02", t: "Komal sketches it", d: "She talks it through with you and shapes it into a design." },
+    { n: "02", t: "Komal curates it", d: "She talks it through with you and shapes it into a design." },
     { n: "03", t: "Made by hand, for you", d: "Painted or crocheted slowly, then sent to your door." },
   ];
   return (

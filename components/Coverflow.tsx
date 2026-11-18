@@ -36,7 +36,7 @@ export default function Coverflow({ items }: { items: Product[] }) {
         <div className="dots">{items.map((p, k) => <b key={p.id} className={k === i ? "on" : ""} onClick={() => go(k)} />)}</div>
         <button className="lk" onClick={() => go(i + 1)}>Next →</button>
       </div>
-      <p className="hint">Tap or click the centre image to view full version</p>
+      <p className="hint">Tap or click the centre image to view it in full</p>
       {lb !== null && <Lightbox items={items} index={lb} onClose={() => setLb(null)} onChange={setLb} />}
     </div>
   );
